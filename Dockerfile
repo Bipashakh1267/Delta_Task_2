@@ -10,8 +10,6 @@ RUN yum -y update --nogpgcheck && \
                    mysql \
                    mysql-server
 
-
-
 COPY genStudent.sh /home/genStudent.sh
 COPY feeBreakup.sh /home/feeBreakup.sh
 COPY office_messAllocation.sh /home/office_messAllocation.sh
