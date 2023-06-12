@@ -1,0 +1,31 @@
+version: '3'
+services:
+  mysql:
+    container_name: mysql_container
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=student_details_database
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - '3306:3306'
+    networks:
+      - hostel_network
+
+  hostel:
+    container_name: hostel_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+    links:
+      - mysql
+    ports:
+      - '80:80'
+    networks:
+      - hostel_network
+
+networks:
+  hostel_network:
