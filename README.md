@@ -7,5 +7,7 @@ Steps to setup the project exec into hostel_container and execute following comm
 5. permit
 
 Password for all users -> password@123
+
 To check domain name is configured execute ---> curl gamma-z.hm 
+
 To reset execute --> bash reset.sh
