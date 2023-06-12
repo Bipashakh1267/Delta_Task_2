@@ -3,8 +3,9 @@ Steps to setup the project exec into hostel_container and execute following comm
 1. echo "alias genStudent='bash /home/genStudent.sh'" >> /root/.bashrc
 2. echo "alias permit='bash /home/permit.sh'" >> /root/.bashrc
 3. source /root/.bashrc
-4. genStudent studentDetails.txt      \\ Password for all users -> password@123
+4. genStudent studentDetails.txt     
 5. permit
 
+Password for all users -> password@123
 To check domain name is configured execute ---> curl gamma-z.hm 
 To reset execute --> bash reset.sh
