@@ -1,5 +1,5 @@
 # Delta_Task_2
-Steps to setup the project --> 
+Steps to setup the project exec into hostel_container and execute following commands --> 
 1. echo "alias genStudent='bash /home/genStudent.sh'" >> /root/.bashrc
 2. echo "alias permit='bash /home/permit.sh'" >> /root/.bashrc
 3. source /root/.bashrc
